@@ -23,6 +23,6 @@ app.use(bodyParser.json());
 // Use the customer routes
 app.use("/api/customer", customerRoutes);
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
