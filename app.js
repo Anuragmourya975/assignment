@@ -8,7 +8,9 @@ const PORT = process.env.PORT || 3030;
 
 // MongoDB connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/customer")
+  .connect(
+    "mongodb+srv://anuragmourya975:9BFAHBwfOf9j0SnM@cluster0.cqfxczt.mongodb.net/customer"
+  )
   .then(() => {
     console.log("connection to mongodb successfull");
   })
