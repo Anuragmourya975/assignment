@@ -4,7 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const customerRoutes = require("./routes/customerRoutes");
 const app = express();
-const PORT = process.env.PORT || 3030;
+const PORT = process.env.PORT;
 
 // MongoDB connection
 mongoose
@@ -24,5 +24,5 @@ app.use(bodyParser.json());
 app.use("/api/customer", customerRoutes);
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port ${PORT}`);
 });
